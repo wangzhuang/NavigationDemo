@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_frament"
+    app:startDestination="@+id/nav_home_frament"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/nav_home_frament"
+        android:name="com.king.navigationdemo.fragments.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home"
+        >
+
+    </fragment>
+    <action
+        android:id="@+id/action_nav_home_frament_to_nav_second_fragment"
+        app:destination="@+id/nav_home_frament"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" >
+        <argument
+            android:name="name"
+            android:defaultValue="default_value" />
+    </action>
+</navigation>
